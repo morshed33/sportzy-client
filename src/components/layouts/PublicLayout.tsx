@@ -1,9 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-const App: React.FC = () => {
+const PublicLayout: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div className="public-layout">
+      <nav>{/* Public Navigation */}</nav>
       <main>
         <Outlet />
       </main>
@@ -11,4 +12,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default PublicLayout;
